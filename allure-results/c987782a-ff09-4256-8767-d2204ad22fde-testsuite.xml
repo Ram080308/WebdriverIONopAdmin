@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649077323856' stop='1649077327968'>
+    <name>Login to Nop Commerece Admin portal</name>
+    <title>Login to Nop Commerece Admin portal</title>
+    <test-cases>
+        <test-case start='1649077323857' status='broken' stop='1649077327963'>
+            <name>1_Should allow user to login</name>
+            <title>1_Should allow user to login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.60'/>
+            </parameters>
+            <steps>
+                <step start='1649077323865' status='passed' stop='1649077324014'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='e788b469-abfd-4a37-a661-c6e2d561c4c0-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1649077324015' status='passed' stop='1649077325127'>
+                    <name>DELETE /session/:sessionId/cookie</name>
+                    <title>DELETE /session/:sessionId/cookie</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1649077325130' status='passed' stop='1649077327437'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8a6eb2d7-1502-4b6a-9814-2ccbfff297e4-attachment.json' type='application/json' size='77'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1649077327654' status='broken' stop='1649077327962'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='de5f2173-d7dc-4e1a-bbfb-90680a860bb3-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps>
+                        <step start='1649077327917' status='broken' stop='1649077327962'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=100.0.4896.60)</message>
+                <stack-trace>no such window: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=100.0.4896.60)
+                    at getErrorFromResponseBody (E:\TCS WebdriverIO\node_modules\webdriver\build\utils.js:197:12)
+                    at NodeJSRequest._request (E:\TCS WebdriverIO\node_modules\webdriver\build\request\index.js:158:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (E:\TCS WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.$ (E:\TCS WebdriverIO\node_modules\webdriverio\build\commands\browser\$.js:88:17)
+                    at async Browser.wrapCommandFn (E:\TCS WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async LoginPage.loginToApplication (E:\TCS WebdriverIO\test\pageobjects\login_page.js:11:9)
+                    at async Context.&lt;anonymous> (E:\TCS WebdriverIO\test\specs\login_to_application.js:15:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

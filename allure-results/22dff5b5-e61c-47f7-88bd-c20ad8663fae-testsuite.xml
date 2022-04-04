@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1648902413527' stop='1648902420128'>
+    <name>Login to Nop Commerece Admin portal</name>
+    <title>Login to Nop Commerece Admin portal</title>
+    <test-cases>
+        <test-case start='1648902413528' status='broken' stop='1648902420126'>
+            <name>Should allow user to login</name>
+            <title>Should allow user to login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.60'/>
+            </parameters>
+            <steps>
+                <step start='1648902413536' status='passed' stop='1648902413694'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='2ff7faaf-2a28-4e63-81df-07647d683f50-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648902413699' status='passed' stop='1648902416688'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5f50fd10-ec41-49ce-a515-63c41bd47ccc-attachment.json' type='application/json' size='77'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648902419707' status='passed' stop='1648902419732'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2b5b9dee-86cb-4280-bb61-79c943d0e776-attachment.json' type='application/json' size='57'/>
+                        <attachment title='Response' source='50e08324-d029-4d56-b48e-016531866f4e-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648902419745' status='passed' stop='1648902419804'>
+                    <name>POST /session/:sessionId/element/d3eb1adb-7499-4422-9f2c-352b7a0a6158/clear</name>
+                    <title>POST /session/:sessionId/element/d3eb1adb-7499-4422-9f2c-352b7a0a6158/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1648902419816' status='passed' stop='1648902419944'>
+                    <name>POST /session/:sessionId/element/d3eb1adb-7499-4422-9f2c-352b7a0a6158/value</name>
+                    <title>POST /session/:sessionId/element/d3eb1adb-7499-4422-9f2c-352b7a0a6158/value</title>
+                    <attachments>
+                        <attachment title='Request' source='b9a4fe5e-6619-4195-add9-a010da87d8a8-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648902419945' status='passed' stop='1648902420124'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='ebaddb3a-a6e4-4ba0-b48e-eba4e9aef1f4-attachment.png' type='image/png' size='29836'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'setValue')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'setValue')
+                    at LoginPage.loginToApplication (E:\TCS WebdriverIO\test\pageobjects\login_page.js:13:29)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (E:\TCS WebdriverIO\test\specs\login_to_application.js:9:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

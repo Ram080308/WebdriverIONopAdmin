@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649071266128' stop='1649071267707'>
+    <name>Create a new campaign</name>
+    <title>Create a new campaign</title>
+    <test-cases>
+        <test-case start='1649071266128' status='broken' stop='1649071267704'>
+            <name>Create a new Campaign</name>
+            <title>Create a new Campaign</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.60'/>
+            </parameters>
+            <steps>
+                <step start='1649071266129' status='passed' stop='1649071266143'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='d1911f7b-a097-408d-880e-419e8aaba93f-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1649071266143' status='passed' stop='1649071267032'>
+                    <name>DELETE /session/:sessionId/cookie</name>
+                    <title>DELETE /session/:sessionId/cookie</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1649071267033' status='passed' stop='1649071267513'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='15566705-ebd7-4ef4-8799-551f67089fd1-attachment.json' type='application/json' size='77'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1649071267516' status='passed' stop='1649071267701'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='e57c452a-c9a3-4489-8b52-d69b2f442969-attachment.png' type='image/png' size='29829'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>reader is not defined</message>
+                <stack-trace>ReferenceError: reader is not defined
+                    at Context.&lt;anonymous> (E:\TCS WebdriverIO\test\specs\create_new_campaign.js:13:22)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

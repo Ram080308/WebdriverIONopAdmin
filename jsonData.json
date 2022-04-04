@@ -1,0 +1,6 @@
+{
+    "name": "TCSCampaign",
+    "subject": "30% off",
+    "body": "30% off on apperals",
+    "custrole": ["Administrators","Guests"]        
+}
